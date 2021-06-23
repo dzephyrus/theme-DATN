@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+#2f4d73#2f4d73#2f4d73#2f4d73#2f4d73/*--------------------------------------------------------------
 BASE WEB
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -13162,7 +13162,7 @@ GENERAL
 }
 
 .tour-infomation__content__header__icon p img {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 
 .tour-infomation__content__descript {
@@ -13464,7 +13464,7 @@ GENERAL
 }
 
 .tour-infomation-2 .tour-infomation__content__header__icon {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto ;
 }
 
 @media (max-width: 768px) {
@@ -16023,7 +16023,9 @@ iframe {
   text-align: center;
   width: 100%;
   margin: 0;
+
   background-color: #3fced3;
+
   font-family: Lato-900;
   font-size: 25px;
   color: #ffffff;
