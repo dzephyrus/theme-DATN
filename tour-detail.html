@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -297,12 +295,11 @@
                             <h2>Scuba Diving Phi Phi Island</h2>
                             <span class="trending-tour-item__group-infor__rating"></span>
                             <span>(2 reviews)</span>
-                            <div class="tour-infomation__content__header__icon">
+                            <div class="tour-infomation__content__header__icon ">
                                 
                                 <p><img src="images/icon/time-left.svg" class="col-1 pl-0 pr-1" alt="">5 Days 4 Nights</p>
-                                <p><img src="images/icon/group.svg" class="col-1 pl-0 pr-1" alt="">Group: 5 - 10 People</p>
-                                <p><img src="assets/images/tours/tour_item-icon-address.png" alt="">Nepal</p>
-                                <p><img src="assets/images/tours/tour_item-icon-age-range.png" alt="">Min Age: 15+</p>
+                                <p><img src="images/icon/group.svg" class="col-2 pl-0 pr-2" alt="">Group: 5 - 10 People</p>
+                                <p><img src="images/icon/placeholder.svg" class="col-1 px-0" alt="">Nepal</p>
                                 
                             </div>
                         </div>
@@ -394,36 +391,36 @@
 							</div>
 						  </div>
 						
-						  <div class="slider slider-nav">
-							<div>
+						  <div class="slider slider-nav mx-n1 mt-2">
+							<div class="px-1">
 								<p class="thumb-img rounded"> 
 								  <span class="thumb-item thumb-5x3"> 
 									  <img src="../../explus/vnd/images/7.png" class="" alt="..."> 
 								  </span> 
 								</p>
 							</div>
-							<div>
+							<div class="px-1">
 								<p class="thumb-img rounded"> 
 								  <span class="thumb-item thumb-5x3"> 
 									  <img src="images/Ngo Xuan Binh (29).png" class="" alt="..."> 
 								  </span> 
 								</p>
 							</div>
-							  <div>
+							  <div class="px-1">
 								<p class="thumb-img rounded"> 
 								  <span class="thumb-item thumb-5x3"> 
 									  <img src="images/Ngo Xuan Binh (29).png" class="" alt="..."> 
 								  </span> 
 								</p>
 							</div>
-							  <div>
+							  <div class="px-1">
 								<p class="thumb-img rounded"> 
 								  <span class="thumb-item thumb-5x3"> 
 									  <img src="images/Ngo Xuan Binh (29).png" class="" alt="..."> 
 								  </span> 
 								</p>
 							</div>
-							  <div>
+							  <div class="px-1">
 								<p class="thumb-img rounded"> 
 								  <span class="thumb-item thumb-5x3"> 
 									  <img src="images/Ngo Xuan Binh (29).png" class="" alt="..."> 
@@ -779,7 +776,35 @@
 
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	
-	<script src="js/app-theme.js"></script>
+<!--	<script src="js/app-theme.js"></script>-->
+	<script>
+		function ItemShowOut($toggleElement,$classAction){
+
+        $($toggleElement).on('click',function(){
+          
+            $($toggleElement).removeClass($classAction);
+            $($toggleElement).find('p').slideUp();
+            if($(this).attr('data-click-state') == 1) {
+                $(this).attr('data-click-state', 0);
+                $(this).removeClass($classAction);
+                $(this).find('p').slideUp();
+            } else {
+            $(this).attr('data-click-state', 1);
+            $(this).addClass($classAction);
+            $(this).find('p').slideDown();
+
+            }
+            
+            $($toggleElement).not('.'+$classAction).attr('data-click-state', 0);
+           
+
+        });
+  
+    }
+
+    ItemShowOut('.tour-infomation__content__schedule__day','schedule-show');
+    ItemShowOut('.tour-infomation__content__FAQ__item','faq-show');
+	</script>
 	
 	<script src="js/jquery.datepicker2.js"></script>
 	
@@ -821,13 +846,13 @@
 		   asNavFor: '.slider-nav'
 		 });
 		 $('.slider-nav').slick({
-		   slidesToShow: 3,
+		   slidesToShow: 4,
 		   slidesToScroll: 1,
 		   asNavFor: '.slider-for',
 		   dots: true,
 		   focusOnSelect: true,
-			 nextArrow: '<button class="any-class-name-you-want-next">Next</button>',
-				prevArrow: '<button class="any-class-name-you-want-previous">Previous</button>'
+			 nextArrow: '<button class="slick-custom-next"><i class="fas fa-chevron-right"></i></button>',
+				prevArrow: '<button class="slick-custom-previous"><i class="fas fa-chevron-left"></i></button>'
 		 });
 
 		 $('a[data-slide]').click(function(e) {
