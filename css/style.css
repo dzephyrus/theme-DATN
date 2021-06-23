@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+#2f4d73#2f4d73#2f4d73#2f4d73#2f4d73/*--------------------------------------------------------------
 BASE WEB
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -13503,7 +13503,7 @@ GENERAL
 }
 
 .tour-infomation-2 .tour-infomation__content__header__icon {
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto ;
 }
 
 @media (max-width: 768px) {
@@ -15782,7 +15782,7 @@ iframe {
   text-align: center;
   width: 100%;
   margin: 0;
-  background-color: #ffe000;
+  background-color: #2f4d73;
   font-family: Lato-900;
   font-size: 25px;
   color: #ffffff;

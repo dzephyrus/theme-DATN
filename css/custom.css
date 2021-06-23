@@ -106,3 +106,38 @@
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=custom.css.map */
+
+
+.slick-custom-previous{
+	    position: absolute;
+    z-index: 2;
+    top: 39px;
+    background: #ffffff8c;
+    border: none;
+    /* bottom: 50%; */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 14px;
+}
+.slick-custom-next{
+	position: absolute;
+    z-index: 2;
+    top: 39px;
+    background: #ffffff8c;
+    border: none;
+    /* bottom: 50%; */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 14px;
+}
+.slick-custom-next:focus, .slick-custom-previous:focus{
+	outline: none
+}
